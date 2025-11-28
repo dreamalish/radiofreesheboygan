@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Radio Free Sheboygan</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* small gallery additions */
+    .photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;max-width:var(--max-width);margin:18px auto;padding:0 16px}
+    .photo-card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(11,11,11,0.04)}
+    .photo-card img{width:100%;height:180px;object-fit:cover;display:block}
+    .photo-card p{padding:8px;font-size:13px;color:var(--muted);margin:0}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html"><svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+        <rect x="0" y="0" width="100" height="100" rx="6" fill="var(--blue-600)"/>
+        <text x="50" y="56" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="white">RFS</text>
+      </svg></a>
+      <div class="brand-text"><h1>Radio Free Sheboygan</h1></div>
+    </div>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="episodes.html">Episodes</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Gallery</h2>
+    <p class="small">A selection of photographs and behind-the-scenes from the CD6 series and other projects.</p>
+
+    <section class="photo-grid" aria-live="polite">
+      <div class="photo-card">
+        <img src="assets/photo1.jpg" alt="Candidate speaking at a community hall">
+        <p>Town hall night — Nov 2025</p>
+      </div>
+      <div class="photo-card">
+        <img src="assets/photo2.jpg" alt="Shelley Fuchs speaking into microphone">
+        <p>Shelley on location</p>
+      </div>
+      <!-- more photos -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Radio Free Sheboygan — © <span id="year3"></span>.</small>
+  </footer>
+  <script>document.getElementById('year3').textContent=new Date().getFullYear();</script>
+</body>
+</html>

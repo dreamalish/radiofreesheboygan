@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Radio Free Sheboygan</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-wrap{max-width:640px;margin:18px auto;padding:0 16px}
+    .field{display:flex;flex-direction:column;margin-bottom:12px}
+    label{font-weight:600;margin-bottom:6px}
+    input[type="text"], input[type="email"], textarea{padding:10px;border-radius:6px;border:1px solid #e5e7eb}
+    textarea{min-height:120px}
+    .form-actions{display:flex;gap:12px;align-items:center}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html"><svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+        <rect x="0" y="0" width="100" height="100" rx="6" fill="var(--blue-600)"/>
+        <text x="50" y="56" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="white">RFS</text>
+      </svg></a>
+      <div class="brand-text"><h1>Radio Free Sheboygan</h1></div>
+    </div>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="episodes.html">Episodes</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-wrap">
+    <h2>Contact</h2>
+    <p class="small">Reach out for interviews, corrections, or to support Radio Free Sheboygan.</p>
+
+    <!-- Replace action with your form handler e.g., Formspree, Netlify Forms, or your server -->
+    <form action="https://example.com/form-handler" method="post" aria-label="Contact form">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what's up"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Send</button>
+        <a class="btn btn-ghost" href="mailto:hello@radiofreesheboygan.org">Email directly</a>
+      </div>
+    </form>
+
+    <hr />
+    <p class="small">Prefer to subscribe? Add our RSS: <code>https://example.com/podcast.rss</code> (replace with your feed)</p>
+  </main>
+
+  <footer class="site-footer">
+    <small>Radio Free Sheboygan — © <span id="year5"></span>.</small>
+  </footer>
+  <script>document.getElementById('year5').textContent=new Date().getFullYear();</script>
+</body>
+</html>

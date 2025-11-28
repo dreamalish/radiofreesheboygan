@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Radio Free Sheboygan</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Radio Free Sheboygan — local audio, interviews, photography and independent reporting.">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Radio Free Sheboygan">
+  <meta property="og:description" content="Independent interviews, music and local culture from Sheboygan.">
+</head>
+<body class="site-root">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+        <rect x="0" y="0" width="100" height="100" rx="6" fill="var(--blue-600)"/>
+        <text x="50" y="56" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="white">RFS</text>
+      </svg>
+      <div class="brand-text">
+        <h1>Radio Free Sheboygan</h1>
+        <p class="tagline">Independent. Local. Unfiltered.</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="episodes.html">Episodes</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="hero">
+    <section class="hero-left">
+      <h2 class="eyebrow">New series: The Sixth Seat — Interviews with CD6 hopefuls</h2>
+      <h3 class="headline">Radio Free Sheboygan Presents</h3>
+      <p class="lead">Hosted by <strong>Shelley Fuchs, Jr.</strong> — long-form interviews with the six potential representatives for Wisconsin’s 6th Congressional District. Honest questions. No scripts. No deals.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="episodes.html">Listen Now — Episode 1</a>
+        <a class="btn btn-ghost" href="gallery.html">See the Photos</a>
+      </div>
+
+      <div class="player-card" aria-label="Latest episode player">
+        <div class="player-meta">
+          <strong>Episode 1 — Meet the Candidates</strong>
+          <span class="meta-small">25m • Nov 28, 2025</span>
+        </div>
+        <!-- Inline audio player: replace src with your MP3 URL -->
+        <audio controls preload="none">
+          <source src="episodes/episode1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="subscribe-row">
+          <a class="link" href="#">Subscribe (RSS)</a>
+          <a class="link" href="#">Spotify</a>
+          <a class="link" href="#">Apple Podcasts</a>
+        </div>
+      </div>
+    </section>
+
+    <aside class="hero-right">
+      <figure class="cover">
+        <img src="assets/shelley-cover.jpg" alt="Shelley Fuchs Jr. portrait" />
+        <figcaption>Host: Shelley Fuchs, Jr.</figcaption>
+      </figure>
+
+      <div class="quick-links">
+        <h4>Quick</h4>
+        <ul>
+          <li><a href="episodes.html#cd6">CD6 Interviews</a></li>
+          <li><a href="gallery.html">Photo Archive</a></li>
+          <li><a href="about.html">Who we are</a></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <small>Radio Free Sheboygan — © <span id="year"></span>. Made with intent.</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
