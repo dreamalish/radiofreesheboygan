@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Videos — Radio Free Sheboygan</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .video-wrap {
+      max-width: 1100px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .video-card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+
+    .video-title {
+      padding: 12px 16px;
+      font-weight: 600;
+      border-bottom: 1px solid #e5e7eb;
+      background: #f9fafb;
+    }
+
+    .video-embed {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 */
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-caption {
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">
+        <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+          <rect x="0" y="0" width="100" height="100" rx="6" fill="var(--blue-600)"/>
+          <text x="50" y="56" text-anchor="middle" font-family="Georgia,serif"
+            font-size="36" fill="white">RFS</text>
+        </svg>
+      </a>
+      <div class="brand-text">
+        <h1>Radio Free Sheboygan</h1>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="episodes.html">Episodes</a>
+      <a href="videos.html" class="active">Videos</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="video-wrap">
+    <h2>Video Content</h2>
+    <p class="small">
+      Select conversations, campaign interviews, and special recordings from
+      Radio Free Sheboygan.
+    </p>
+
+    <section class="video-grid">
+
+      <!-- VIDEO 1 -->
+      <article class="video-card">
+        <div class="video-title">RFK Bank of Spare Human Parts</div>
+        <div class="video-embed">
+          <iframe
+            src="https://youtu.be/-GFXJR20poA"
+            title="RFK Bank of Spare Human Parts"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-caption">
+          Need Cash Fast? Visit RFK Bank!
+        </div>
+      </article>
+
+      <!-- VIDEO 2 -->
+      <article class="video-card">
+        <div class="video-title">"To Catch a Falling Knife" - eugene walnut (Official)</div>
+        <div class="video-embed">
+          <iframe
+            src="https://youtu.be/PGggbhVfLr8"
+            title="To Catch a Falling Knife - eugene walnut"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-caption">
+          RFS resident hip-hop artist Eugene Walnut presents a grim take on the state of the Republic.
+        </div>
+      </article>
+
+      <!-- VIDEO 3 -->
+      <article class="video-card">
+        <div class="video-title">Interview Title #3</div>
+        <div class="video-embed">
+          <iframe
+            src="https://youtu.be/amgJqtzbQu8"
+            title="Radio Free Sheboygan"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-caption">
+          Radio Free Sheboygan
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>
+      Radio Free Sheboygan — © <span id="year6"></span>
+    </small>
+  </footer>
+
+  <script>
+    document.getElementById('year6').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
