@@ -124,3 +124,34 @@ body{
 
 /* utility */
 .small{font-size:13px;color:var(--muted)}
+
+/* video embedding grid and overlay button */
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  border: none;
+}
+
+.overlay-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.overlay-button:hover {
+  background: rgba(0,0,0,0.8);
+}
+
