@@ -55,28 +55,10 @@ body{
   padding:0 16px;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.brand-link {
-  display: flex;
-  align-items: center;
-}
-
-.brand-logo {
-  height: 70px;     /* adjust as needed */
-  width: auto;      /* maintains proportions */
-  display: block;
-  border-radius: 6px; /* optional */
-}
-
-.brand-text h1 {
-  margin: 0;
-  font-size: 1.6rem;
-}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:64px;height:64px;border-radius:6px}
+.brand-text h1{margin:0;font-size:18px;letter-spacing:0.4px}
+.brand-text .tagline{margin:0;color:var(--muted);font-size:13px}
 
 /* nav */
 .main-nav a{
