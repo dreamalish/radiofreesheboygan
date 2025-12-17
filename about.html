@@ -5,21 +5,65 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>About — Radio Free Sheboygan</title>
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .bio-row {
+      display: grid;
+      grid-template-columns: 1fr 160px;
+      gap: 24px;
+      align-items: start;
+      margin: 32px 0;
+    }
+
+    .bio-text h3 {
+      margin-top: 0;
+    }
+
+    .bio-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      background: #f1f5f9;
+      object-fit: cover;
+    }
+
+    .bio-image .placeholder {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #e5e7eb;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 8px;
+    }
+
+    @media (max-width: 640px) {
+      .bio-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="brand">
-      <a href="index.html"><svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
-        <rect x="0" y="0" width="100" height="100" rx="6" fill="var(--blue-600)"/>
-        <text x="50" y="56" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="white">RFS</text>
-      </svg></a>
-      <div class="brand-text"><h1>Radio Free Sheboygan</h1></div>
+      <a href="index.html">
+        <img src="radiofree-sheboygan.jpg" alt="Radio Free Sheboygan logo" class="brand-logo">
+      </a>
+      <div class="brand-text">
+        <h1>Radio Free Sheboygan</h1>
+      </div>
     </div>
     <nav class="main-nav" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="episodes.html">Episodes</a>
       <a href="gallery.html">Gallery</a>
-      <a href="videos.html" class="active">Videos</a>
+      <a href="videos.html">Videos</a>
       <a href="about.html" class="active">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -27,10 +71,59 @@
 
   <main class="container" style="max-width:800px;margin:20px auto;padding:0 16px;">
     <h2>About Radio Free Sheboygan</h2>
-    <p class="small">Radio Free Sheboygan is an independent audio project documenting local politics, arts, and culture. We produce long-form interviews, short features, and a rotating photo series. Our mission: preserve local voice and question power.</p>
+    <p class="small">
+      Radio Free Sheboygan is an independent audio project documenting local politics,
+      arts, and culture. We produce long-form interviews, short features, and a rotating
+      photo series. Our mission: preserve local voice and question power.
+    </p>
 
-    <h3>Shelley Fuchs, Jr.</h3>
-    <p class="small">Host, editor, and interviewer. Shelley brings long-form curiosity and a no-nonsense approach to conversation.</p>
+    <!-- Shelley -->
+    <section class="bio-row">
+      <div class="bio-text">
+        <h3>Shelley Fuchs, Jr.</h3>
+        <p class="small">
+          Host, editor, and interviewer. Shelley brings long-form curiosity and a
+          no-nonsense approach to conversation.
+        </p>
+      </div>
+      <div class="bio-image">
+        <!-- Replace src when ready -->
+        <div class="placeholder">Shelley photo</div>
+        <!-- <img src="shelley.jpg" alt="Shelley Fuchs Jr."> -->
+      </div>
+    </section>
+
+    <!-- Steve -->
+    <section class="bio-row">
+      <div class="bio-text">
+        <h3>Steve Scotland</h3>
+        <p class="small">
+          Co-founder of Radio Free Sheboygan. Steve focuses on production, concept
+          development, and maintaining the project’s independent spirit.
+        </p>
+      </div>
+      <div class="bio-image">
+        <div class="placeholder">Steve photo</div>
+        <!-- <img src="steve-scotland.jpg" alt="Steve Scotland"> -->
+      </div>
+    </section>
+
+    <!-- Eaglet -->
+    <section class="bio-row">
+      <div class="bio-text">
+        <h3>Eaglet</h3>
+        <p class="small">
+          A dynamic content creator, entrepreneur, and devoted mom of two from Wisconsin.
+          Passionate about luxury, motivation, and lifestyle aesthetics, she builds
+          communities that inspire and uplift—from haircare businesses to interactive
+          social shows like <em>Bakery with Tea</em>.
+        </p>
+      </div>
+      <div class="bio-image">
+        <div class="placeholder">Eaglet photo</div>
+        <!-- <img src="eaglet.jpg" alt="Eaglet"> -->
+      </div>
+    </section>
 
     <h3>How we operate</h3>
     <ul class="small">
@@ -43,6 +136,8 @@
   <footer class="site-footer">
     <small>Radio Free Sheboygan — © <span id="year4"></span>.</small>
   </footer>
-  <script>document.getElementById('year4').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
