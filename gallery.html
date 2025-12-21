@@ -132,6 +132,15 @@
   <footer class="site-footer">
     <small>Radio Free Sheboygan — © <span id="year3"></span>.</small>
   </footer>
-  <script>document.getElementById('year3').textContent=new Date().getFullYear();</script>
+  <script>document.getElementById('year3').textContent=new Date().getFullYear();
+  <script>
+  const slides = document.querySelectorAll('.slideshow img');
+  let index = 0;
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 6000);
+</script>
 </body>
 </html>
