@@ -389,3 +389,10 @@ figcaption {
     grid-template-columns: 1fr;
   }
 }
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  background: #fff;
+}
