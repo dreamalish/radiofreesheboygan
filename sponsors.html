@@ -1,18 +1,28 @@
-<!doctype html>
+    <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Sponsors — Radio Free Sheboygan</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Sponsors supporting Radio Free Sheboygan independent interviews and local reporting.">
+
+  <meta
+    name="description"
+    content="Sponsors supporting Radio Free Sheboygan independent interviews, media, and local reporting. Featuring WIRailfan scale model macabre scenes."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header class="site-header">
   <div class="brand">
     <a href="index.html">
-      <img src="rfsbluewhite.jpg" alt="Radio Free Sheboygan logo" class="logo">
+      <img
+        src="rfsbw.jpg"
+        alt="Radio Free Sheboygan logo"
+        class="logo"
+      />
     </a>
     <div class="brand-text">
       <h1>Radio Free Sheboygan</h1>
@@ -29,37 +39,87 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-  <main class="container" style="max-width:1100px;margin:40px auto;padding:0 16px;">
 
-  <h2>Our Sponsors</h2>
-  <p class="lead">
-    Independent media is made possible through partnerships with distinctive creators and small businesses.
-  </p>
+<main class="container">
 
+  <section class="intro">
+    <h2>Our Sponsors</h2>
+    <p class="lead">
+      Radio Free Sheboygan is supported by artists, creators, and small
+      businesses who value independent media and original storytelling.
+    </p>
+  </section>
+
+  <!-- Featured Sponsor -->
   <section class="card sponsor-card">
+
     <div class="sponsor-grid">
+
+      <!-- Sponsor Image -->
       <div class="sponsor-img">
-        <img src="wirailfan.jpg" alt="WIRailfan HO scale model scene">
+        <img
+          src="wirailfan.jpg"
+          alt="WIRailfan HO scale macabre model scene"
+          loading="lazy"
+        />
       </div>
 
+      <!-- Sponsor Content -->
       <div class="sponsor-content">
         <h3>WIRailfan — Scale Model Macabre</h3>
+
         <p>
-          WIRailfan creates detailed HO scale miniature scenes inspired by
-          historic, cinematic, and infamous locations. Each handcrafted build
+          WIRailfan creates meticulously detailed HO scale miniature scenes
+          inspired by historic, cinematic, and infamous locations. Each build
           blends storytelling, architecture, and atmospheric realism for serious
           collectors and model rail enthusiasts.
         </p>
 
-        <a class="btn btn-primary"
-           href="https://www.etsy.com/shop/WiRailfan"
-           target="_blank"
-           rel="noopener">
-          Visit the WIRailfan Etsy Shop
+        <a
+          class="btn btn-primary"
+          href="https://www.etsy.com/shop/WiRailfan"
+          target="_blank"
+          rel="noopener"
+        >
+          Visit the WIRailfan Etsy Shop →
         </a>
       </div>
+
     </div>
+
+    <!-- Video Embed -->
+    <div class="sponsor-video">
+      <h4>Featured Sponsor Video</h4>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/rCOU76lJMd8"
+          title="WIRailfan Scale Model Macabre — Sponsor Promo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
   </section>
+
+</main>
+
+<footer class="site-footer">
+  <small>
+    Radio Free Sheboygan — © <span id="year"></span>. FM Sounds, AM Soul
+  </small>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
 <h3>Interested in Sponsoring Radio Free Sheboygan?</h3>
     <p>Visit <a href="contact.html">Contact Us</a> and inquire about sponsoring local independent radio.</p>
 </main>
