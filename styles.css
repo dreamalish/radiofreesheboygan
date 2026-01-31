@@ -396,3 +396,30 @@ select {
   font-size: 1rem;
   background: #fff;
 }
+.sponsor-card {
+  margin-top: 2rem;
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.sponsor-img img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.sponsor-content h3 {
+  margin-top: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sponsor-grid {
+    grid-template-columns: 1fr;
+  }
+}
