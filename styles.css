@@ -423,3 +423,16 @@ select {
     grid-template-columns: 1fr;
   }
 }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: 0.5px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
